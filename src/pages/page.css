@@ -1,0 +1,54 @@
+/* NAVBAR CSS */
+body{
+    background-image: url("../../public/images/background.jpg");
+    overflow-y: hidden;
+}
+#navleft{
+    font-size: 50px;
+    margin-left: 50px;
+}
+.navbar{
+    background-color: rgba(2, 65, 114, 0.886);
+}
+.navlink{
+    color: #fffefc;
+    text-decoration: none; 
+    text-align: center;
+    line-height: 70px;
+}
+#asd{
+    /* margin-left: 42%;
+    height: 15px;
+    width: 15px; */
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0.886);
+    /* border-radius: 300%; */
+}
+
+/* HOMEPAGE CSS */
+#h1{
+    text-align: center;
+    color: white;
+    font-size: 500%;
+    margin-top: 10%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style:oblique;
+}
+#nonselected{
+    height: 80px;
+    width: 120px;
+}
+#selected{
+    height: 80px;
+    width: 120px;
+}
+#btnn{
+    width: 100%;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 8, 8);
+    border-color: none;
+    border-width: 0ch;
+    font-size: 5%;
+    font-family: fantasy;
+}

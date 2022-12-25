@@ -1,0 +1,27 @@
+/* COLLECTION CSS */
+body{
+    overflow-y:auto;
+    background-image: url("../../public/images/background.jpg");
+}
+
+#card{
+    margin-top: 20px;
+    margin-left:20px;
+    margin-right: 20px;
+    color: aliceblue;
+    background-color: rgba(182, 255, 243, 0.54);
+    background-image: url("../../public/images/background.jpg");
+}
+#cardimg{
+    margin-bottom: 12px;
+    filter: grayscale(1) opacity(.8);
+}
+#cardtitle{
+  color: black;
+  font-size: 200%;
+   margin:2px;
+}
+
+#cardimg:hover {
+  filter: grayscale(0) opacity(1);
+}

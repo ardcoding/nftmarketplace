@@ -1,0 +1,56 @@
+body{
+    overflow-y: hidden;
+}
+#contain{
+    border-style: none;
+    background-image: url(https://mobimg.b-cdn.net/v3/fetch/10/10bbdc892c6ac01d8131835706bedbab.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.box{
+    transition: all .5s ease-in-out;
+    background-image:url(https://images8.alphacoders.com/120/1203524.jpg);
+    background-size: cover;
+    background-position:center;
+    filter: grayscale(80%);
+}
+.box:hover{
+    transform:translateX(50%) scale(1.5);
+    filter: grayscale(0);
+    width: 40%;
+}
+.boxleft:hover{
+    transform:translateX(-50%) scale(1.5);
+    filter: grayscale(0);
+    width: 40%;
+}
+#h1{
+    text-align: center;
+    color: rgb(255, 208, 0);
+    font-size: 500%;
+    margin-top: 1%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style:oblique;
+}
+#cardimgg{
+    margin-left: 150px;
+    width: 150px;
+    height: 150px;
+    transition: all .5s ease-in-out;
+}
+#cardimgg2{
+    margin: 45px;
+    width: 150px;
+    height: 150px;
+    margin-left: 250px;
+    transition: all .5s ease-in-out;
+}
+#cardimgg3{
+    margin-left: 350px;
+    width: 150px;
+    height: 150px;
+    transition: all .5s ease-in-out;
+}
+.img2:hover{
+    transform:rotate(60deg);
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link rel="stylesheet" href="style.css">
+
+  <title>The Cool Cats</title>
+</head>
+
+<body>
+  
+  <div id="root"></div>
+  <div class="container">
+
+    <svg viewBox="0 0 960 300">
+      <symbol id="s-text">
+        <text id="sonuc2" text-anchor="middle" x="50%" y="80%">NFT Marketing DAPP</text>
+      </symbol>
+
+      <g class="g-ants">
+        <use xlink:href="#s-text" class="text-copy"></use>
+        <use xlink:href="#s-text" class="text-copy"></use>
+        <use xlink:href="#s-text" class="text-copy"></use>
+        <use xlink:href="#s-text" class="text-copy"></use>
+        <use xlink:href="#s-text" class="text-copy"></use>
+      </g>
+    </svg>
+
+  </div>
+
+  <button id="sonuc" class="buton sonuc" onclick="yon()">See The Cool Cats</button>
+  
+  <script>
+    function gizleGoster() {
+      var secilenID = document.getElementById("sonuc");
+      var secilenID2 = document.getElementById("sonuc2")
+      if (document.URL != "http://localhost:3000/") {
+        secilenID.style.display = "none";
+        secilenID2.style.display = "none";
+      } else {
+        secilenID.style.display = "";
+        secilenID2.style.display = "";
+      }
+    }
+  </script>
+
+  <script>
+    var animateButton = function (e) {
+      e.preventDefault;
+      //reset animation
+      e.target.classList.remove('animate');
+      e.target.classList.add('animate');
+      setTimeout(function () {
+        e.target.classList.remove('animate');
+      }, 700);
+    };
+
+    var buton = document.getElementsByClassName("buton");
+    for (var i = 0; i < buton.length; i++) {
+      buton[i].addEventListener('click', animateButton, false);
+    }
+
+    function ysYonlendir(saniye) {
+      if (saniye == 3) {
+        window.location.href = "/introduction";
+        return;
+
+      }
+    }
+    function yon() {
+      setTimeout(function () {
+        ysYonlendir(3);
+      }, 500);
+    }
+    gizleGoster()
+  </script>
+
+</body>
+</html>
